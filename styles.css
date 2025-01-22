@@ -39,11 +39,12 @@
 }
 .navber{
   justify-content: space-between;
+  margin: 20px;
 }
 .nav-left{
   display: flex;
 }
-.navber , .banner{
+.navber , .banner,.mainber ,footer{
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -56,3 +57,196 @@ button{
   font-size: 20px;
   font-weight: 300;
 }
+.banner{
+  align-items: center;
+ justify-content: space-between;
+}
+.text-clr{
+  color: rgba(254, 163, 1, 1) ;
+}
+.text-clr-2{
+  color: rgba(1, 172, 253, 1);
+}
+.banner-title{
+  font-size: 56px;
+  font-weight: bold;
+}
+.banner-discription{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(17, 17, 17, 1);
+}
+.btn-primary{
+  background-color: black;
+  color: white;
+}
+.banner-img{
+  width: 100%;
+}
+
+.text-center{
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+}
+main section{
+  margin-top: 130px;
+  margin-bottom: 130px;
+  background-image: url('assets/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.curriculum-container{
+  display: flex; 
+  gap: 30px;
+}
+.curriculum{
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+.curriculum-1{
+  background-color: rgba(222, 245, 255, 1);
+}
+.curriculum-2{
+  background-color:rgba(255, 244, 220, 1) ;
+}
+.curriculum-3{
+    background-color: rgba(242, 232, 255, 1);
+}
+.btn-1{
+  border: none;
+  text-decoration: none;
+  font-size: 15.09;
+  font-weight: bold;
+  color: rgba(100, 200, 255, 1);
+}
+.btn-2{
+  border: none;
+  text-decoration: none;
+  font-size: 15.09;
+  font-weight: bold;
+  color: rgba(240, 170, 0, 1);
+}
+.btn-3{
+  border: none;
+  text-decoration: none;
+  font-size: 15.09;
+  font-weight: bold;
+  color: rgba(135, 0, 255, 1);
+}
+.curriculum-container{
+  text-align: center;
+}
+.icon{
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.f-column{
+  display: flex;
+}
+footer{
+ padding: 135px 15px;
+ display: flex;
+  gap: 172px;
+  background-color: rgba(1, 172, 253, 1);
+  color: white;
+  justify-content: center;
+
+}
+
+.date-1{
+  color: white;
+  background-color: rgba(60, 216, 232, 1);
+  border-radius: 15px;
+  padding: 10px;
+}
+.date-2 ,.date-3,.date-4{
+  color: white;
+  background-color:rgba(149, 178, 38, 1);
+  border-radius: 15px;
+  padding: 10px;
+
+}.date-5{
+  color: white;
+  background-color:rgba(93, 88, 240, 1);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.large {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+
+
+
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content  {
+  display: flex;
+  background: #00c4cc;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.card-content h2,
+.card-content h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.card-group { 
+  display: flex;
+  gap: 20px;
+}
+.hidden{
+  display: none;
+}
+ @media screen and (max-width: 576px) {
+  
+  .curriculum-container , .container ,footer , .display-flex{
+    flex-direction: column;
+  }
+  .banner-title{
+    font-size: 35px; 
+  }
+  .banner{
+  flex-direction: column-reverse;
+  }
+.banner-title{
+  margin: 5px;
+}
+ }
